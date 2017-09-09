@@ -7,7 +7,6 @@ template_bgr = cv2.imread('template.jpg')
 template_gray = cv2.cvtColor(template_bgr, cv2.COLOR_BGR2GRAY)
 w, h = template_gray.shape[::-1]
 
-
 for filename in os.listdir('frames'):
     fn = "frames\\" + filename
     if os.path.isfile(fn):
@@ -19,8 +18,6 @@ for filename in os.listdir('frames'):
         results = cv2.matchTemplate(frame_gray, template_gray, cv2.TM_CCOEFF_NORMED)
         threshold = 0.8
         location = np.where(results >= threshold)
-
-        print(location)
 
         for pt in zip(*location[::-1]):
             found=True
