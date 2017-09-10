@@ -1,0 +1,7 @@
+falco backair right	-	2
+falco downair right	-	3
+falco shine right	-	1
+falco uptilt left	-	2
+fox grab right		-	7
+fox jab right		-	2
+fox shine right		-	3
