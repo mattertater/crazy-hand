@@ -1,7 +1,7 @@
 import cv2, time, os, imutils, numpy as np
 
 # initialize variables
-threshold = 0.85
+threshold = 0.8
 
 # create dictionary of filenames and occurances in all frames
 occurances = {}
